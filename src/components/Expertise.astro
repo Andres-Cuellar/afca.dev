@@ -1,0 +1,362 @@
+---
+---
+
+<section id="expertise" class="expertise">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="section-title">
+				<span class="section-number">02.</span>
+				🧠 En qué soy experto
+			</h2>
+			<p class="section-subtitle">
+				Tecnologías y metodologías que domino para crear soluciones robustas y escalables
+			</p>
+		</div>
+
+		<div class="expertise-grid">
+			<div class="expertise-card card-primary">
+				<div class="card-header">
+					<div class="card-icon">🚀</div>
+					<h3>Desarrollo web y móvil</h3>
+				</div>
+				<div class="card-content">
+					<div class="tech-category">
+						<h4>Frontend</h4>
+						<div class="tech-tags">
+							<span class="tech-tag">React.js</span>
+							<span class="tech-tag">Astro</span>
+							<span class="tech-tag">Next.js</span>
+							<span class="tech-tag">Remix</span>
+						</div>
+					</div>
+					<div class="tech-category">
+						<h4>Backend</h4>
+						<div class="tech-tags">
+							<span class="tech-tag">NestJS</span>
+							<span class="tech-tag">Express</span>
+							<span class="tech-tag">Strapi</span>
+							<span class="tech-tag">Laravel</span>
+						</div>
+					</div>
+					<div class="tech-category">
+						<h4>Mobile & Apps</h4>
+						<div class="tech-tags">
+							<span class="tech-tag">React Native</span>
+							<span class="tech-tag">PWA</span>
+							<span class="tech-tag">SPA</span>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<span class="highlight">WebApps optimizadas para conversión y rendimiento</span>
+				</div>
+			</div>
+
+			<div class="expertise-card card-secondary">
+				<div class="card-header">
+					<div class="card-icon">🤖</div>
+					<h3>Automatización & flujos inteligentes</h3>
+				</div>
+				<div class="card-content">
+					<div class="feature-list">
+						<div class="feature-item">
+							<span class="feature-icon">⚡</span>
+							<div>
+								<strong>Workflows IA + n8n</strong>
+								<p>Atención al cliente, onboarding, ventas y operaciones</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<span class="feature-icon">🔗</span>
+							<div>
+								<strong>Integraciones omnicanal</strong>
+								<p>WhatsApp, CRMs, ERPs y APIs externas</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<span class="feature-icon">💬</span>
+							<div>
+								<strong>Bots conversacionales</strong>
+								<p>Experiencias omnicanal inteligentes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="expertise-card card-tertiary">
+				<div class="card-header">
+					<div class="card-icon">⚙️</div>
+					<h3>DevOps e infraestructura</h3>
+				</div>
+				<div class="card-content">
+					<div class="infra-grid">
+						<div class="infra-item">
+							<h4>🏗️ Infraestructura</h4>
+							<p>Servidores dedicados y datacenter propio</p>
+						</div>
+						<div class="infra-item">
+							<h4>🐳 Contenedores</h4>
+							<p>Despliegues personalizados con Docker</p>
+						</div>
+						<div class="infra-item">
+							<h4>📊 Monitoreo</h4>
+							<p>Hosting y mantenimiento 24/7</p>
+						</div>
+						<div class="infra-item">
+							<h4>🔒 Seguridad</h4>
+							<p>Aplicaciones críticas y datos seguros</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.expertise {
+		padding: 8rem 0;
+		background: var(--bg-primary);
+		position: relative;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.section-number {
+		font-family: 'JetBrains Mono', monospace;
+		color: var(--accent-green);
+		font-size: 1.5rem;
+	}
+
+	.section-subtitle {
+		font-size: 1.25rem;
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+	.expertise-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin-top: 3rem;
+	}
+
+	.expertise-card {
+		background: rgba(26, 26, 26, 0.8);
+		border-radius: 20px;
+		padding: 2rem;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.4s ease;
+		backdrop-filter: blur(10px);
+	}
+
+	.expertise-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		transition: all 0.4s ease;
+	}
+
+	.card-primary::before {
+		background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+	}
+
+	.card-secondary::before {
+		background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+	}
+
+	.card-tertiary::before {
+		background: linear-gradient(90deg, var(--accent-orange), var(--accent-purple));
+	}
+
+	.expertise-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+	}
+
+	.card-primary:hover {
+		box-shadow: 0 20px 40px var(--glow-blue);
+	}
+
+	.card-secondary:hover {
+		box-shadow: 0 20px 40px var(--glow-purple);
+	}
+
+	.card-tertiary:hover {
+		box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+	}
+
+	.card-header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.card-icon {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		background: var(--bg-tertiary);
+		border-radius: 12px;
+	}
+
+	.card-header h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.card-content {
+		margin-bottom: 1.5rem;
+	}
+
+	.tech-category {
+		margin-bottom: 1.5rem;
+	}
+
+	.tech-category h4 {
+		font-size: 1rem;
+		color: var(--accent-green);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.tech-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tech-tag {
+		background: rgba(42, 42, 42, 0.8);
+		color: var(--text-primary);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		border: 1px solid transparent;
+		transition: all 0.3s ease;
+	}
+
+	.tech-tag:hover {
+		border-color: var(--accent-blue);
+		background: rgba(0, 212, 255, 0.1);
+		transform: translateY(-1px);
+	}
+
+	.feature-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.feature-icon {
+		font-size: 1.5rem;
+		margin-top: 0.25rem;
+	}
+
+	.feature-item strong {
+		display: block;
+		color: var(--text-primary);
+		margin-bottom: 0.25rem;
+		font-weight: 600;
+	}
+
+	.feature-item p {
+		color: var(--text-secondary);
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+
+	.infra-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	.infra-item h4 {
+		font-size: 1rem;
+		color: var(--text-primary);
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+
+	.infra-item p {
+		color: var(--text-secondary);
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+
+	.card-footer {
+		padding-top: 1rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.highlight {
+		color: var(--accent-green);
+		font-style: italic;
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 768px) {
+		.expertise {
+			padding: 4rem 0;
+		}
+
+		.section-title {
+			font-size: 2rem;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.125rem;
+		}
+
+		.expertise-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.expertise-card {
+			padding: 1.5rem;
+		}
+
+		.card-header h3 {
+			font-size: 1.25rem;
+		}
+
+		.infra-grid {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+	}
+</style>

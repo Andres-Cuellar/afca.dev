@@ -1,0 +1,268 @@
+---
+---
+
+<section id="services" class="services">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="section-title">
+				<span class="section-number">03.</span>
+				🧩 ¿A quién ayudo?
+			</h2>
+		</div>
+
+		<div class="services-grid">
+			<div class="service-card">
+				<div class="card-icon">🚀</div>
+				<h3>Emprendedores tech y no-tech</h3>
+				<p>que necesitan convertir ideas en software funcional</p>
+				<div class="card-features">
+					<span class="feature">MVP Development</span>
+					<span class="feature">Arquitectura escalable</span>
+					<span class="feature">Time to market</span>
+				</div>
+			</div>
+
+			<div class="service-card">
+				<div class="card-icon">🏢</div>
+				<h3>Agencias y equipos internos</h3>
+				<p>que requieren apoyo técnico externo para lanzar productos</p>
+				<div class="card-features">
+					<span class="feature">Staff augmentation</span>
+					<span class="feature">Code review</span>
+					<span class="feature">Technical leadership</span>
+				</div>
+			</div>
+
+			<div class="service-card">
+				<div class="card-icon">📈</div>
+				<h3>Empresas en crecimiento</h3>
+				<p>que buscan digitalizar operaciones y automatizar procesos</p>
+				<div class="card-features">
+					<span class="feature">Automatización</span>
+					<span class="feature">Integración de sistemas</span>
+					<span class="feature">Digital transformation</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="objective-section">
+			<div class="objective-content">
+				<h3>Mi objetivo</h3>
+				<p>
+					Ayudarte a construir <strong>sistemas sólidos</strong>, con una visión clara de <strong>negocio y tecnología</strong>.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.services {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+		position: relative;
+	}
+
+	.services::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: linear-gradient(90deg, transparent, var(--accent-purple), transparent);
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.section-number {
+		font-family: 'JetBrains Mono', monospace;
+		color: var(--accent-green);
+		font-size: 1.5rem;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.service-card {
+		background: rgba(26, 26, 26, 0.8);
+		border: 1px solid rgba(139, 92, 246, 0.2);
+		border-radius: 20px;
+		padding: 2.5rem 2rem;
+		text-align: center;
+		transition: all 0.4s ease;
+		backdrop-filter: blur(10px);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.service-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.4s ease;
+	}
+
+	.service-card:hover::before {
+		transform: scaleX(1);
+	}
+
+	.service-card:hover {
+		transform: translateY(-8px);
+		border-color: var(--accent-purple);
+		box-shadow: 0 25px 50px var(--glow-purple);
+	}
+
+	.card-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+		display: inline-block;
+		padding: 1rem;
+		background: var(--bg-tertiary);
+		border-radius: 20px;
+		transition: all 0.3s ease;
+	}
+
+	.service-card:hover .card-icon {
+		background: rgba(139, 92, 246, 0.2);
+		transform: scale(1.1);
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: var(--text-primary);
+	}
+
+	.service-card p {
+		color: var(--text-secondary);
+		font-size: 1.125rem;
+		line-height: 1.6;
+		margin-bottom: 2rem;
+	}
+
+	.card-features {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		justify-content: center;
+	}
+
+	.feature {
+		background: rgba(139, 92, 246, 0.1);
+		color: var(--accent-purple);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+		border: 1px solid rgba(139, 92, 246, 0.3);
+		transition: all 0.3s ease;
+	}
+
+	.feature:hover {
+		background: var(--accent-purple);
+		color: var(--text-primary);
+		transform: translateY(-2px);
+	}
+
+	.objective-section {
+		text-align: center;
+		padding: 3rem 0;
+		position: relative;
+	}
+
+	.objective-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100px;
+		height: 2px;
+		background: linear-gradient(90deg, var(--accent-green), var(--accent-blue));
+	}
+
+	.objective-content h3 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		color: var(--accent-green);
+	}
+
+	.objective-content p {
+		font-size: 1.25rem;
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+	.objective-content strong {
+		color: var(--text-primary);
+		font-weight: 600;
+	}
+
+	@media (max-width: 768px) {
+		.services {
+			padding: 4rem 0;
+		}
+
+		.section-title {
+			font-size: 2rem;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.service-card {
+			padding: 2rem 1.5rem;
+		}
+
+		.card-icon {
+			font-size: 2.5rem;
+		}
+
+		.service-card h3 {
+			font-size: 1.25rem;
+		}
+
+		.service-card p {
+			font-size: 1rem;
+		}
+
+		.objective-content h3 {
+			font-size: 1.5rem;
+		}
+
+		.objective-content p {
+			font-size: 1.125rem;
+		}
+	}
+</style>

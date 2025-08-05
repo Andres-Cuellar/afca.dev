@@ -1,0 +1,404 @@
+---
+---
+
+<section id="process" class="process">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="section-title">
+				<span class="section-number">04.</span>
+				✳️ Cómo trabajo
+			</h2>
+			<p class="section-subtitle">
+				Metodología ágil y enfoque estratégico para resultados exitosos
+			</p>
+		</div>
+
+		<div class="process-timeline">
+			<div class="timeline-item" data-step="1">
+				<div class="timeline-marker">
+					<span class="step-number">1</span>
+				</div>
+				<div class="timeline-content">
+					<h3>Diagnóstico</h3>
+					<p>Entiendo tu visión y detecto oportunidades de mejora o automatización.</p>
+					<div class="timeline-tools">
+						<span class="tool">🔍 Análisis</span>
+						<span class="tool">💡 Estrategia</span>
+						<span class="tool">📊 Roadmap</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-step="2">
+				<div class="timeline-marker">
+					<span class="step-number">2</span>
+				</div>
+				<div class="timeline-content">
+					<h3>Propuesta técnica y estratégica</h3>
+					<p>Te presento una solución escalable y realista.</p>
+					<div class="timeline-tools">
+						<span class="tool">🏗️ Arquitectura</span>
+						<span class="tool">💰 Presupuesto</span>
+						<span class="tool">⏱️ Timeline</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-step="3">
+				<div class="timeline-marker">
+					<span class="step-number">3</span>
+				</div>
+				<div class="timeline-content">
+					<h3>Implementación ágil</h3>
+					<p>Desarrollo modular, pruebas continuas y entregas funcionales.</p>
+					<div class="timeline-tools">
+						<span class="tool">⚡ Sprints</span>
+						<span class="tool">🧪 Testing</span>
+						<span class="tool">🚀 Deploy</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-item" data-step="4">
+				<div class="timeline-marker">
+					<span class="step-number">4</span>
+				</div>
+				<div class="timeline-content">
+					<h3>Iteración y crecimiento</h3>
+					<p>Ajustes basados en datos y evolución constante del producto.</p>
+					<div class="timeline-tools">
+						<span class="tool">📈 Analytics</span>
+						<span class="tool">🔄 Iteración</span>
+						<span class="tool">📱 Escalabilidad</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="process-benefits">
+			<h3>¿Por qué esta metodología funciona?</h3>
+			<div class="benefits-grid">
+				<div class="benefit-item">
+					<div class="benefit-icon">⚡</div>
+					<h4>Entregas rápidas</h4>
+					<p>Ves resultados desde el primer sprint</p>
+				</div>
+				<div class="benefit-item">
+					<div class="benefit-icon">🎯</div>
+					<h4>Enfoque en objetivos</h4>
+					<p>Cada feature aporta valor real al negocio</p>
+				</div>
+				<div class="benefit-item">
+					<div class="benefit-icon">🔄</div>
+					<h4>Adaptabilidad</h4>
+					<p>Ajustes constantes basados en feedback</p>
+				</div>
+				<div class="benefit-item">
+					<div class="benefit-icon">📊</div>
+					<h4>Decisiones basadas en datos</h4>
+					<p>Métricas reales para tomar decisiones</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.process {
+		padding: 8rem 0;
+		background: var(--bg-primary);
+		position: relative;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.section-number {
+		font-family: 'JetBrains Mono', monospace;
+		color: var(--accent-green);
+		font-size: 1.5rem;
+	}
+
+	.section-subtitle {
+		font-size: 1.25rem;
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.6;
+	}
+
+	.process-timeline {
+		position: relative;
+		margin: 4rem 0;
+	}
+
+	.process-timeline::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		background: linear-gradient(180deg, var(--accent-blue), var(--accent-green), var(--accent-purple), var(--accent-orange));
+		transform: translateX(-50%);
+	}
+
+	.timeline-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 4rem;
+		position: relative;
+		opacity: 0;
+		animation: fadeInUp 0.6s ease forwards;
+	}
+
+	.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+	.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+	.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+	.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.timeline-item[data-step="1"] .timeline-content,
+	.timeline-item[data-step="3"] .timeline-content {
+		margin-right: 2rem;
+		text-align: right;
+	}
+
+	.timeline-item[data-step="2"] .timeline-content,
+	.timeline-item[data-step="4"] .timeline-content {
+		margin-left: 2rem;
+		text-align: left;
+		order: 2;
+	}
+
+	.timeline-marker {
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+		box-shadow: 0 10px 30px var(--glow-blue);
+		transition: all 0.3s ease;
+	}
+
+	.timeline-item:hover .timeline-marker {
+		transform: scale(1.1);
+		box-shadow: 0 15px 40px var(--glow-green);
+	}
+
+	.step-number {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--bg-primary);
+		font-family: 'JetBrains Mono', monospace;
+	}
+
+	.timeline-content {
+		flex: 1;
+		max-width: 450px;
+		background: rgba(26, 26, 26, 0.8);
+		border: 1px solid rgba(0, 212, 255, 0.2);
+		border-radius: 16px;
+		padding: 2rem;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+	}
+
+	.timeline-content:hover {
+		border-color: var(--accent-blue);
+		box-shadow: 0 10px 30px var(--glow-blue);
+		transform: translateY(-3px);
+	}
+
+	.timeline-content h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		color: var(--text-primary);
+	}
+
+	.timeline-content p {
+		font-size: 1.125rem;
+		color: var(--text-secondary);
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.timeline-tools {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tool {
+		background: rgba(0, 212, 255, 0.1);
+		color: var(--accent-blue);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+		border: 1px solid rgba(0, 212, 255, 0.3);
+		transition: all 0.3s ease;
+	}
+
+	.tool:hover {
+		background: var(--accent-blue);
+		color: var(--text-primary);
+		transform: translateY(-1px);
+	}
+
+	.process-benefits {
+		margin-top: 6rem;
+		text-align: center;
+	}
+
+	.process-benefits h3 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 3rem;
+		color: var(--accent-green);
+	}
+
+	.benefits-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.benefit-item {
+		background: rgba(26, 26, 26, 0.5);
+		border: 1px solid rgba(0, 255, 136, 0.2);
+		border-radius: 16px;
+		padding: 2rem 1.5rem;
+		transition: all 0.3s ease;
+		backdrop-filter: blur(10px);
+	}
+
+	.benefit-item:hover {
+		border-color: var(--accent-green);
+		box-shadow: 0 10px 30px var(--glow-green);
+		transform: translateY(-3px);
+	}
+
+	.benefit-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.benefit-item h4 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.75rem;
+		color: var(--text-primary);
+	}
+
+	.benefit-item p {
+		color: var(--text-secondary);
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	@media (max-width: 1024px) {
+		.process-timeline::before {
+			left: 30px;
+		}
+
+		.timeline-item {
+			flex-direction: column;
+			align-items: flex-start;
+			padding-left: 80px;
+		}
+
+		.timeline-marker {
+			position: absolute;
+			left: -10px;
+			top: 0;
+		}
+
+		.timeline-item[data-step="1"] .timeline-content,
+		.timeline-item[data-step="2"] .timeline-content,
+		.timeline-item[data-step="3"] .timeline-content,
+		.timeline-item[data-step="4"] .timeline-content {
+			margin: 0;
+			text-align: left;
+			order: 0;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.process {
+			padding: 4rem 0;
+		}
+
+		.section-title {
+			font-size: 2rem;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.125rem;
+		}
+
+		.timeline-item {
+			padding-left: 60px;
+		}
+
+		.timeline-marker {
+			width: 60px;
+			height: 60px;
+			left: -10px;
+		}
+
+		.step-number {
+			font-size: 1.25rem;
+		}
+
+		.timeline-content {
+			padding: 1.5rem;
+		}
+
+		.timeline-content h3 {
+			font-size: 1.25rem;
+		}
+
+		.timeline-content p {
+			font-size: 1rem;
+		}
+
+		.process-benefits h3 {
+			font-size: 1.5rem;
+		}
+
+		.benefits-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+	}
+</style>

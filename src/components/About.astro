@@ -1,0 +1,332 @@
+---
+---
+
+<section id="about" class="about">
+	<div class="container">
+		<div class="about-content">
+			<div class="about-text">
+				<h2 class="section-title">
+					<span class="section-number">01.</span>
+					Sobre mí
+				</h2>
+				<div class="about-description">
+					<p>
+						A lo largo de mi carrera he liderado el desarrollo de más de <strong>150 proyectos</strong> en diferentes industrias como fundador de <strong>Glump Studio</strong>, donde hoy estamos enfocados en construir software conversacional impulsado por inteligencia artificial.
+					</p>
+					<p>
+						Actualmente, mi trabajo se centra en el diseño e implementación de <strong>SaaS, CRMs personalizados y sistemas omnicanal</strong>, integrando flujos automatizados con herramientas como n8n e inteligencia artificial aplicada.
+					</p>
+					<p>
+						También administro mi propio datacenter, lo que me permite realizar despliegues a medida con <strong>Docker</strong> y manejar la infraestructura de punta a punta.
+					</p>
+				</div>
+				<div class="company-info">
+					<div class="company-card">
+						<div class="company-icon">🏢</div>
+						<div class="company-details">
+							<h3>Glump Studio</h3>
+							<p>Fundador & CTO</p>
+							<span class="company-focus">Software conversacional + IA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-visual">
+				<div class="tech-orbit">
+					<div class="orbit-center">
+						<div class="center-avatar">
+							<span>👨‍💻</span>
+						</div>
+					</div>
+					<div class="orbit orbit-1">
+						<div class="tech-item" data-tech="React">⚛️</div>
+						<div class="tech-item" data-tech="Node.js">🟢</div>
+						<div class="tech-item" data-tech="Docker">🐳</div>
+					</div>
+					<div class="orbit orbit-2">
+						<div class="tech-item" data-tech="TypeScript">📘</div>
+						<div class="tech-item" data-tech="AI">🤖</div>
+						<div class="tech-item" data-tech="Cloud">☁️</div>
+					</div>
+					<div class="orbit orbit-3">
+						<div class="tech-item" data-tech="Database">🗃️</div>
+						<div class="tech-item" data-tech="Mobile">📱</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about {
+		padding: 8rem 0;
+		background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+		position: relative;
+	}
+
+	.about::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.section-number {
+		font-family: 'JetBrains Mono', monospace;
+		color: var(--accent-green);
+		font-size: 1.5rem;
+	}
+
+	.about-description p {
+		font-size: 1.125rem;
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+		line-height: 1.8;
+	}
+
+	.about-description strong {
+		color: var(--text-primary);
+		font-weight: 600;
+	}
+
+	.company-info {
+		margin-top: 2rem;
+	}
+
+	.company-card {
+		background: rgba(26, 26, 26, 0.5);
+		border: 1px solid rgba(0, 212, 255, 0.2);
+		border-radius: 16px;
+		padding: 1.5rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+	}
+
+	.company-card:hover {
+		border-color: var(--accent-blue);
+		box-shadow: 0 10px 30px var(--glow-blue);
+		transform: translateY(-2px);
+	}
+
+	.company-icon {
+		font-size: 2rem;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--bg-tertiary);
+		border-radius: 12px;
+	}
+
+	.company-details h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+	}
+
+	.company-details p {
+		color: var(--text-secondary);
+		margin-bottom: 0.5rem;
+	}
+
+	.company-focus {
+		display: inline-block;
+		background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+		color: var(--text-primary);
+		padding: 0.25rem 0.75rem;
+		border-radius: 20px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.about-visual {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 500px;
+	}
+
+	.tech-orbit {
+		position: relative;
+		width: 400px;
+		height: 400px;
+	}
+
+	.orbit-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.center-avatar {
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		box-shadow: 0 20px 40px var(--glow-blue);
+		animation: pulse 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% { transform: scale(1); }
+		50% { transform: scale(1.05); }
+	}
+
+	.orbit {
+		position: absolute;
+		border: 1px solid rgba(0, 212, 255, 0.1);
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.orbit-1 {
+		width: 200px;
+		height: 200px;
+		animation: rotate 20s linear infinite;
+	}
+
+	.orbit-2 {
+		width: 280px;
+		height: 280px;
+		animation: rotate 30s linear infinite reverse;
+	}
+
+	.orbit-3 {
+		width: 360px;
+		height: 360px;
+		animation: rotate 40s linear infinite;
+	}
+
+	@keyframes rotate {
+		0% { transform: translate(-50%, -50%) rotate(0deg); }
+		100% { transform: translate(-50%, -50%) rotate(360deg); }
+	}
+
+	.tech-item {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: var(--bg-tertiary);
+		border: 1px solid var(--accent-purple);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		animation: counterRotate 20s linear infinite;
+	}
+
+	.orbit-2 .tech-item {
+		animation: counterRotate 30s linear infinite reverse;
+	}
+
+	.orbit-3 .tech-item {
+		animation: counterRotate 40s linear infinite;
+	}
+
+	@keyframes counterRotate {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(-360deg); }
+	}
+
+	.tech-item:hover {
+		background: var(--accent-purple);
+		box-shadow: 0 10px 30px var(--glow-purple);
+		transform: scale(1.1);
+	}
+
+	.orbit-1 .tech-item:nth-child(1) { top: -25px; left: 50%; transform: translateX(-50%); }
+	.orbit-1 .tech-item:nth-child(2) { bottom: -25px; left: 50%; transform: translateX(-50%); }
+	.orbit-1 .tech-item:nth-child(3) { top: 50%; right: -25px; transform: translateY(-50%); }
+
+	.orbit-2 .tech-item:nth-child(1) { top: -25px; left: 50%; transform: translateX(-50%); }
+	.orbit-2 .tech-item:nth-child(2) { bottom: -25px; left: 50%; transform: translateX(-50%); }
+	.orbit-2 .tech-item:nth-child(3) { top: 50%; left: -25px; transform: translateY(-50%); }
+
+	.orbit-3 .tech-item:nth-child(1) { top: 25%; right: 25%; }
+	.orbit-3 .tech-item:nth-child(2) { bottom: 25%; left: 25%; }
+
+	@media (max-width: 1024px) {
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+		}
+
+		.tech-orbit {
+			width: 300px;
+			height: 300px;
+		}
+
+		.orbit-1 { width: 150px; height: 150px; }
+		.orbit-2 { width: 210px; height: 210px; }
+		.orbit-3 { width: 270px; height: 270px; }
+	}
+
+	@media (max-width: 768px) {
+		.about {
+			padding: 4rem 0;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.about-description p {
+			font-size: 1rem;
+		}
+
+		.about-visual {
+			height: 300px;
+		}
+
+		.tech-orbit {
+			width: 250px;
+			height: 250px;
+		}
+
+		.center-avatar {
+			width: 60px;
+			height: 60px;
+			font-size: 1.5rem;
+		}
+
+		.tech-item {
+			width: 40px;
+			height: 40px;
+			font-size: 1.2rem;
+		}
+	}
+</style>

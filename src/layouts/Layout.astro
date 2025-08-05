@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Desarrollador Full Stack | Especialista en IA y Automatización</title>
+		<meta name="description" content="Desarrollador Full Stack con +5 años de experiencia. Especialista en React, NestJS, automatización con IA y despliegues Docker. Fundador de Glump Studio." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--bg-primary: #0A0A0A;
+		--bg-secondary: #1A1A1A;
+		--bg-tertiary: #2A2A2A;
+		--text-primary: #FFFFFF;
+		--text-secondary: #B3B3B3;
+		--text-muted: #666666;
+		--accent-blue: #00D4FF;
+		--accent-green: #00FF88;
+		--accent-purple: #8B5CF6;
+		--accent-orange: #FF6B35;
+		--glow-blue: rgba(0, 212, 255, 0.3);
+		--glow-green: rgba(0, 255, 136, 0.3);
+		--glow-purple: rgba(139, 92, 246, 0.3);
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Inter', system-ui, sans-serif;
+		background: var(--bg-primary);
+		color: var(--text-primary);
+		line-height: 1.6;
+		overflow-x: hidden;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 1rem;
+		}
+	}
+
+	/* Scrollbar */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: var(--bg-secondary);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--accent-blue);
+		border-radius: 4px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--accent-green);
+	}
+</style>

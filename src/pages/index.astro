@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Expertise from '../components/Expertise.astro';
+import Services from '../components/Services.astro';
+import Process from '../components/Process.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Navigation />
+	<main>
+		<Hero />
+		<About />
+		<Expertise />
+		<Services />
+		<Process />
+		<Contact />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	main {
+		padding-top: 80px; /* Account for fixed navigation */
+	}
+
+	@media (max-width: 768px) {
+		main {
+			padding-top: 70px;
+		}
+	}
+</style>
