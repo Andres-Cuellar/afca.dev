@@ -1,363 +1,411 @@
 ---
+
 ---
 
 <section id="hero" class="hero">
-	<div class="container">
-		<div class="hero-content">
-			<div class="hero-text">
-				<h1 class="hero-title">
-					<span class="gradient-text">🚀 Transformando ideas</span><br>
-					en <span class="typewriter" data-text='["software inteligente","experiencias digitales","soluciones escalables"]'></span>
-				</h1>
-				<p class="hero-description">
-					Soy desarrollador <strong>Full Stack</strong> con más de <strong>5 años de experiencia</strong> creando soluciones digitales que combinan eficiencia, escalabilidad y una excelente experiencia de usuario.
-				</p>
-				<div class="hero-stats">
-					<div class="stat">
-						<span class="stat-number">150+</span>
-						<span class="stat-label">Proyectos</span>
-					</div>
-					<div class="stat">
-						<span class="stat-number">5+</span>
-						<span class="stat-label">Años</span>
-					</div>
-					<div class="stat">
-						<span class="stat-number">100%</span>
-						<span class="stat-label">Dedicación</span>
-					</div>
-				</div>
-				<div class="hero-actions">
-					<a href="#contact" class="btn-primary">
-						📩 Trabajemos juntos
-					</a>
-					<a href="#expertise" class="btn-secondary">
-						🧠 Ver mi expertise
-					</a>
-				</div>
-			</div>
-			<div class="hero-visual">
-				<div class="floating-card">
-					<div class="code-snippet">
-						<div class="code-header">
-							<div class="dots">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-							<span class="filename">glump-studio.tsx</span>
-						</div>
-						<div class="code-content">
-  <pre><code>
-    {`<span class="keyword">const</span> <span class="var">developer</span> = {
-  <span class="prop">name</span>: <span class="string">"Full Stack Dev"</span>,
-  <span class="prop">experience</span>: <span class="number">5</span>,
-  <span class="prop">focus</span>: <span class="string">"AI + Automation"</span>,
-  <span class="prop">company</span>: <span class="string">"Glump Studio"</span>
-};`}
-  </code></pre>
-</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bg-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text w-full">
+        <h1 class="hero-title">
+          <span class="gradient-text">Transformando ideas en</span><br />
+          <span
+            class="typewriter"
+            data-text='["software inteligente","experiencias digitales","soluciones escalables"]'
+          ></span>
+        </h1>
+        <p class="hero-description">
+          Soy desarrollador <strong>Full Stack</strong> con más de <strong
+            >5 años de experiencia</strong
+          > creando soluciones digitales que combinan eficiencia, escalabilidad y
+          una excelente experiencia de usuario.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Años</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Dedicación</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary"> 📩 Trabajemos juntos </a>
+          <a href="#expertise" class="btn-secondary"> 🧠 Ver mi expertise </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card">
+          <div class="code-snippet">
+            <div class="code-header">
+              <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="filename">glump-studio.tsx</span>
+            </div>
+            <div class="code-content">
+              <pre>
+				<code>
+		<span class="keyword">const</span> <span class="var">developer</span> 
+		<span class="prop">name</span>: <span class="string">"Full Stack Dev"</span>,
+		<span class="prop">experience</span>: <span class="number">5</span>,
+		<span class="prop">focus</span>: <span class="string">"AI + Automation"</span>,
+		<span class="prop">company</span>: <span class="string">"Glump Studio"</span>
+
+  		</code>
+	</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-grid"></div>
 </section>
 
 <style>
-	.hero {
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
-		position: relative;
-		padding: 2rem 0;
-		overflow: hidden;
-	}
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+    overflow: hidden;
+  }
 
-	.bg-grid {
-		position: absolute;
-		inset: 0;
-		background-image: 
-			linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
-			linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
-		background-size: 50px 50px;
-		opacity: 0.3;
-		animation: gridMove 20s linear infinite;
-	}
+  .bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+        rgba(0, 212, 255, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    animation: gridMove 20s linear infinite;
+  }
 
-	@keyframes gridMove {
-		0% { transform: translate(0, 0); }
-		100% { transform: translate(50px, 50px); }
-	}
+  @keyframes gridMove {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
 
-	.hero-content {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		align-items: center;
-		position: relative;
-		z-index: 1;
-	}
+  .hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
 
-	.hero-title {
-		font-size: 3.5rem;
-		font-weight: 700;
-		line-height: 1.2;
-		margin-bottom: 1.5rem;
-	}
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
 
-	.gradient-text {
-		background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-	}
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      var(--accent-blue),
+      var(--accent-green)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-	.typewriter {
-		color: var(--accent-purple);
-		border-right: 2px solid var(--accent-purple);
-		animation: blink 1s infinite;
-	}
+  .typewriter {
+    color: var(--accent-purple);
+    border-right: 2px solid var(--accent-purple);
+    animation: blink 1s infinite;
+  }
 
-	@keyframes blink {
-		0%, 50% { border-color: transparent; }
-		51%, 100% { border-color: var(--accent-purple); }
-	}
+  @keyframes blink {
+    0%,
+    50% {
+      border-color: transparent;
+    }
+    51%,
+    100% {
+      border-color: var(--accent-purple);
+    }
+  }
 
-	.hero-description {
-		font-size: 1.25rem;
-		color: var(--text-secondary);
-		margin-bottom: 2rem;
-		line-height: 1.8;
-	}
+  .hero-description {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
 
-	.hero-stats {
-		display: flex;
-		gap: 2rem;
-		margin-bottom: 2.5rem;
-	}
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
 
-	.stat {
-		text-align: center;
-	}
+  .stat {
+    text-align: center;
+  }
 
-	.stat-number {
-		display: block;
-		font-size: 2rem;
-		font-weight: 700;
-		color: var(--accent-green);
-		font-family: 'JetBrains Mono', monospace;
-	}
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    font-family: "JetBrains Mono", monospace;
+  }
 
-	.stat-label {
-		display: block;
-		font-size: 0.875rem;
-		color: var(--text-muted);
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
+  .stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-	.hero-actions {
-		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 
-	.btn-primary, .btn-secondary {
-		padding: 1rem 2rem;
-		border-radius: 12px;
-		text-decoration: none;
-		font-weight: 600;
-		font-size: 1rem;
-		transition: all 0.3s ease;
-		display: inline-block;
-	}
+  .btn-primary,
+  .btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
 
-	.btn-primary {
-		background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
-		color: var(--bg-primary);
-		box-shadow: 0 10px 30px var(--glow-blue);
-	}
+  .btn-primary {
+    background: linear-gradient(
+      135deg,
+      var(--accent-blue),
+      var(--accent-green)
+    );
+    color: var(--bg-primary);
+    box-shadow: 0 10px 30px var(--glow-blue);
+  }
 
-	.btn-primary:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 15px 40px var(--glow-green);
-	}
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px var(--glow-green);
+  }
 
-	.btn-secondary {
-		background: transparent;
-		color: var(--text-primary);
-		border: 2px solid var(--accent-purple);
-		box-shadow: 0 5px 20px var(--glow-purple);
-	}
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--accent-purple);
+    box-shadow: 0 5px 20px var(--glow-purple);
+  }
 
-	.btn-secondary:hover {
-		background: var(--accent-purple);
-		transform: translateY(-2px);
-		box-shadow: 0 10px 30px var(--glow-purple);
-	}
+  .btn-secondary:hover {
+    background: var(--accent-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px var(--glow-purple);
+  }
 
-	.hero-visual {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.floating-card {
-		animation: float 6s ease-in-out infinite;
-	}
+  .floating-card {
+    animation: float 6s ease-in-out infinite;
+  }
 
-	@keyframes float {
-		0%, 100% { transform: translateY(0px); }
-		50% { transform: translateY(-20px); }
-	}
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
-	.code-snippet {
-		background: rgba(26, 26, 26, 0.8);
-		border: 1px solid rgba(0, 212, 255, 0.3);
-		border-radius: 16px;
-		overflow: hidden;
-		backdrop-filter: blur(10px);
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-	}
+  .code-snippet {
+    background: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  }
 
-	.code-header {
-		background: rgba(42, 42, 42, 0.8);
-		padding: 1rem 1.5rem;
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
+  .code-header {
+    background: rgba(42, 42, 42, 0.8);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-	.dots {
-		display: flex;
-		gap: 0.5rem;
-	}
+  .dots {
+    display: flex;
+    gap: 0.5rem;
+  }
 
-	.dots span {
-		width: 12px;
-		height: 12px;
-		border-radius: 50%;
-	}
+  .dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
 
-	.dots span:nth-child(1) { background: #FF5F57; }
-	.dots span:nth-child(2) { background: #FFBD2E; }
-	.dots span:nth-child(3) { background: #28CA42; }
+  .dots span:nth-child(1) {
+    background: #ff5f57;
+  }
+  .dots span:nth-child(2) {
+    background: #ffbd2e;
+  }
+  .dots span:nth-child(3) {
+    background: #28ca42;
+  }
 
-	.filename {
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 0.875rem;
-		color: var(--text-secondary);
-	}
+  .filename {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
 
-	.code-content {
-		padding: 1.5rem;
-		font-family: 'JetBrains Mono', monospace;
-		font-size: 0.875rem;
-		line-height: 1.8;
-	}
+  .code-content {
+    padding: 1.5rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
 
-	.keyword { color: var(--accent-purple); }
-	.var { color: var(--accent-blue); }
-	.prop { color: var(--text-primary); }
-	.string { color: var(--accent-green); }
-	.number { color: var(--accent-orange); }
+  .keyword {
+    color: var(--accent-purple);
+  }
+  .var {
+    color: var(--accent-blue);
+  }
+  .prop {
+    color: var(--text-primary);
+  }
+  .string {
+    color: var(--accent-green);
+  }
+  .number {
+    color: var(--accent-orange);
+  }
 
-	@media (max-width: 1024px) {
-		.hero-content {
-			grid-template-columns: 1fr;
-			gap: 3rem;
-		}
+  @media (max-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
 
-		.hero-title {
-			font-size: 2.5rem;
-		}
-	}
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  }
 
-	@media (max-width: 768px) {
-		.hero-title {
-			font-size: 2rem;
-		}
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
 
-		.hero-description {
-			font-size: 1.125rem;
-		}
+    .hero-description {
+      font-size: 1.125rem;
+    }
 
-		.hero-stats {
-			gap: 1rem;
-		}
+    .hero-stats {
+      gap: 1rem;
+    }
 
-		.hero-actions {
-			flex-direction: column;
-		}
+    .hero-actions {
+      flex-direction: column;
+    }
 
-		.btn-primary, .btn-secondary {
-			text-align: center;
-		}
-	}
+    .btn-primary,
+    .btn-secondary {
+      text-align: center;
+    }
+  }
 </style>
 
 <script>
-function typeWriter() {
-    const element = document.querySelector('.typewriter');
+  function typeWriter() {
+    const element = document.querySelector(".typewriter");
     if (!element) {
-        console.warn('No se encontró elemento con clase "typewriter"');
-        return;
+      console.warn('No se encontró elemento con clase "typewriter"');
+      return;
     }
 
     try {
-        const texts = JSON.parse(element.dataset.text);
-        if (!Array.isArray(texts) || texts.length === 0) {
-            throw new Error('data-text debe ser un array no vacío');
+      const texts = JSON.parse(element.dataset.text);
+      if (!Array.isArray(texts) || texts.length === 0) {
+        throw new Error("data-text debe ser un array no vacío");
+      }
+
+      let textIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let timeoutId;
+
+      const typeSpeeds = {
+        write: parseInt(element.dataset.writeSpeed) || 100,
+        delete: parseInt(element.dataset.deleteSpeed) || 50,
+        pause: parseInt(element.dataset.pauseSpeed) || 2000,
+        between: parseInt(element.dataset.betweenSpeed) || 500,
+      };
+
+      function type() {
+        const currentText = texts[textIndex];
+
+        if (isDeleting) {
+          element.textContent = currentText.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          element.textContent = currentText.substring(0, charIndex + 1);
+          charIndex++;
         }
 
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let timeoutId;
+        let typeSpeed = isDeleting ? typeSpeeds.delete : typeSpeeds.write;
 
-        const typeSpeeds = {
-            write: parseInt(element.dataset.writeSpeed) || 100,
-            delete: parseInt(element.dataset.deleteSpeed) || 50,
-            pause: parseInt(element.dataset.pauseSpeed) || 2000,
-            between: parseInt(element.dataset.betweenSpeed) || 500
-        };
-
-        function type() {
-            const currentText = texts[textIndex];
-            
-            if (isDeleting) {
-                element.textContent = currentText.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                element.textContent = currentText.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            let typeSpeed = isDeleting ? typeSpeeds.delete : typeSpeeds.write;
-            
-            if (!isDeleting && charIndex === currentText.length) {
-                typeSpeed = typeSpeeds.pause;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
-                typeSpeed = typeSpeeds.between;
-            }
-            
-            timeoutId = setTimeout(type, typeSpeed);
+        if (!isDeleting && charIndex === currentText.length) {
+          typeSpeed = typeSpeeds.pause;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          textIndex = (textIndex + 1) % texts.length;
+          typeSpeed = typeSpeeds.between;
         }
-        
-        type();
 
-        // Devuelve una función para limpiar el timeout si es necesario
-        return () => clearTimeout(timeoutId);
+        timeoutId = setTimeout(type, typeSpeed);
+      }
+
+      type();
+
+      // Devuelve una función para limpiar el timeout si es necesario
+      return () => clearTimeout(timeoutId);
     } catch (error) {
-        console.error('Error en el typeWriter:', error.message);
-        element.textContent = 'Error en el texto';
+      console.error("Error en el typeWriter:", error.message);
+      element.textContent = "Error en el texto";
     }
-}
+  }
 
-// Iniciar el efecto
-document.addEventListener('DOMContentLoaded', typeWriter);
+  // Iniciar el efecto
+  document.addEventListener("DOMContentLoaded", typeWriter);
 </script>
